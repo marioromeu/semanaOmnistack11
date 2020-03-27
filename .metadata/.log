@@ -1,0 +1,269 @@
+!SESSION 2018-11-24 22:57:35.965 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-11-24 23:03:49.259
+!MESSAGE Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-11-24 23:04:26.217
+!MESSAGE Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+
+!ENTRY org.eclipse.jdt.core 4 4 2018-11-24 23:06:54.268
+!MESSAGE JavaBuilder handling CoreException while building: bela-view-listen-poc
+!STACK 1
+org.eclipse.core.runtime.CoreException: Parent of resource: /home/marioromeu/git/bel/project/bela-view-listen-poc/target/test-classes is marked as read-only.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:48)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.checkReadOnlyParent(LocalFile.java:82)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:319)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1200)
+	at org.eclipse.core.internal.resources.Folder.internalCreate(Folder.java:175)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:108)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.createOutputFolder(NameEnvironment.java:458)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:168)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:62)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:623)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:174)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:798)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:219)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:262)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:315)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:318)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:370)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:391)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.AccessDeniedException: /home/marioromeu/git/bel/project/bela-view-listen-poc/target/test-classes
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	... 20 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 277 2018-11-24 23:06:54.268
+!MESSAGE Parent of resource: /home/marioromeu/git/bel/project/bela-view-listen-poc/target/test-classes is marked as read-only.
+!STACK 0
+java.nio.file.AccessDeniedException: /home/marioromeu/git/bel/project/bela-view-listen-poc/target/test-classes
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1200)
+	at org.eclipse.core.internal.resources.Folder.internalCreate(Folder.java:175)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:108)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.createOutputFolder(NameEnvironment.java:458)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:168)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:62)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:623)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:174)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:798)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:219)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:262)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:315)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:318)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:370)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:391)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 4 2018-11-24 23:07:14.887
+!MESSAGE JavaBuilder handling CoreException while building: bela-view-listen-poc
+!STACK 1
+org.eclipse.core.runtime.CoreException: Parent of resource: /home/marioromeu/git/bel/project/bela-view-listen-poc/target/test-classes is marked as read-only.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:48)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.checkReadOnlyParent(LocalFile.java:82)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:319)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1200)
+	at org.eclipse.core.internal.resources.Folder.internalCreate(Folder.java:175)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:108)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.createOutputFolder(NameEnvironment.java:458)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:168)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:62)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:623)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:174)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:798)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:219)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:262)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:315)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:318)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:370)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:391)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.AccessDeniedException: /home/marioromeu/git/bel/project/bela-view-listen-poc/target/test-classes
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	... 20 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 277 2018-11-24 23:07:14.888
+!MESSAGE Parent of resource: /home/marioromeu/git/bel/project/bela-view-listen-poc/target/test-classes is marked as read-only.
+!STACK 0
+java.nio.file.AccessDeniedException: /home/marioromeu/git/bel/project/bela-view-listen-poc/target/test-classes
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1200)
+	at org.eclipse.core.internal.resources.Folder.internalCreate(Folder.java:175)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:108)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.createOutputFolder(NameEnvironment.java:458)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:168)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:62)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:623)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:174)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:798)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:219)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:262)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:315)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:318)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:370)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:391)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.filesystem 4 277 2018-11-24 23:07:47.034
+!MESSAGE Parent of resource: /home/marioromeu/git/bel/project/bela-view-listen-poc/target/test-classes is marked as read-only.
+!STACK 0
+java.nio.file.AccessDeniedException: /home/marioromeu/git/bel/project/bela-view-listen-poc/target/test-classes
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1200)
+	at org.eclipse.core.internal.resources.Folder.internalCreate(Folder.java:175)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:108)
+	at org.eclipse.jdt.internal.ui.util.CoreUtility.createDerivedFolder(CoreUtility.java:54)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.flush(BuildPathsBlock.java:854)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.configureJavaProject(BuildPathsBlock.java:756)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.configureJavaProject(BuildPathsBlock.java:752)
+	at org.eclipse.jdt.internal.ui.preferences.BuildPathsPropertyPage$1.run(BuildPathsPropertyPage.java:220)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:41)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5736)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:108)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter$1.run(WorkbenchRunnableAdapter.java:121)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.filesystem 4 277 2018-11-24 23:08:04.203
+!MESSAGE Parent of resource: /home/marioromeu/git/bel/project/bela-view-listen-poc/target/test-classes is marked as read-only.
+!STACK 0
+java.nio.file.AccessDeniedException: /home/marioromeu/git/bel/project/bela-view-listen-poc/target/test-classes
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1200)
+	at org.eclipse.core.internal.resources.Folder.internalCreate(Folder.java:175)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:108)
+	at org.eclipse.jdt.internal.ui.util.CoreUtility.createDerivedFolder(CoreUtility.java:54)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.flush(BuildPathsBlock.java:854)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.configureJavaProject(BuildPathsBlock.java:756)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.configureJavaProject(BuildPathsBlock.java:752)
+	at org.eclipse.jdt.internal.ui.preferences.BuildPathsPropertyPage$1.run(BuildPathsPropertyPage.java:220)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:41)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5736)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:108)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter$1.run(WorkbenchRunnableAdapter.java:121)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.filesystem 4 277 2018-11-24 23:08:07.254
+!MESSAGE Parent of resource: /home/marioromeu/git/bel/project/bela-view-listen-poc/target/test-classes is marked as read-only.
+!STACK 0
+java.nio.file.AccessDeniedException: /home/marioromeu/git/bel/project/bela-view-listen-poc/target/test-classes
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1200)
+	at org.eclipse.core.internal.resources.Folder.internalCreate(Folder.java:175)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:108)
+	at org.eclipse.jdt.internal.ui.util.CoreUtility.createDerivedFolder(CoreUtility.java:54)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.flush(BuildPathsBlock.java:854)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.configureJavaProject(BuildPathsBlock.java:756)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.configureJavaProject(BuildPathsBlock.java:752)
+	at org.eclipse.jdt.internal.ui.preferences.BuildPathsPropertyPage$1.run(BuildPathsPropertyPage.java:220)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:41)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5736)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:108)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter$1.run(WorkbenchRunnableAdapter.java:121)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.filesystem 4 277 2018-11-24 23:08:24.974
+!MESSAGE Parent of resource: /home/marioromeu/git/bel/project/bela-view-listen-poc/target/test-classes is marked as read-only.
+!STACK 0
+java.nio.file.AccessDeniedException: /home/marioromeu/git/bel/project/bela-view-listen-poc/target/test-classes
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:1200)
+	at org.eclipse.core.internal.resources.Folder.internalCreate(Folder.java:175)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:108)
+	at org.eclipse.jdt.internal.ui.util.CoreUtility.createDerivedFolder(CoreUtility.java:54)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.flush(BuildPathsBlock.java:854)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.configureJavaProject(BuildPathsBlock.java:756)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.BuildPathsBlock.configureJavaProject(BuildPathsBlock.java:752)
+	at org.eclipse.jdt.internal.ui.preferences.BuildPathsPropertyPage$1.run(BuildPathsPropertyPage.java:220)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:41)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5736)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:108)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter$1.run(WorkbenchRunnableAdapter.java:121)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
